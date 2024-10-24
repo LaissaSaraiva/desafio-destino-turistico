@@ -19,3 +19,42 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+
+body {
+  padding: 40px 20px;
+}
+
+.main__container span {
+  text-transform: uppercase;
+  color: var(--text-headline);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.main__container h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: var(--text-primary);
+}
+
+.main__container figure img {
+  border-radius: 28px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.main__container figure figcaption {
+  color: var(--text-secondary);
+  font-style: italic;
+  text-align: justify;
+}
+
+@media (min-width: 640px) {
+  body {
+    padding: 88px 80px;
+  }
+
+  .main__container figure figcaption {
+    text-align: center;
+  }
+}
