@@ -20,11 +20,16 @@
   font-family: "Open Sans", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   padding: 40px 20px;
 }
 
-.highlight__container span {
+.highlight__container span,
+.main__description span {
   text-transform: uppercase;
   color: var(--text-headline);
   font-weight: bold;
@@ -33,6 +38,7 @@ body {
 
 .highlight__container h1 {
   font-size: 36px;
+  font-weight: bold;
   margin-bottom: 40px;
   color: var(--text-primary);
 }
@@ -47,6 +53,78 @@ body {
   color: var(--text-secondary);
   font-style: italic;
   text-align: justify;
+}
+
+.main__container {
+  margin: 64px 0 40px;
+}
+
+.main__description h2 {
+  color: var(--text-primary);
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.main__description p {
+  color: var(--text-secondary);
+}
+
+.tourist__attractions {
+  list-style: none;
+  margin-top: 64px;
+
+}
+
+.tourist__attractions li img {
+  width: 100%;
+  border-radius: 28px;
+  margin-bottom: 20px;
+}
+
+.tourist__attractions li h3 {
+  color: var(--text-primary);
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.tourist__attractions li p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.tourist__attractions article span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.blog__categories {
+  list-style: disc;
+  margin-left: 24px;
+  margin-bottom: 48px;
+}
+
+.blog__categories li::marker {
+  color: var(--text-secondary);
+}
+
+.blog__categories a {
+  font-weight: bold;
+}
+
+.blog__category--history a {
+  color: var(--accent-blue);
+}
+
+.blog__category--couples a {
+  color: var(--accent-purple);
+}
+
+.blog__category--families a {
+  color: var(--accent-pink);
+}
+
+.blog__category--budget a {
+  color: var(--accent-orange);
 }
 
 @media (min-width: 640px) {
