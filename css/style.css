@@ -18,4 +18,158 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  padding: 40px 20px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.highlight__container span,
+.main__description span {
+  text-transform: uppercase;
+  color: var(--text-headline);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.highlight__container h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: var(--text-primary);
+}
+
+.highlight__container figure img {
+  border-radius: 28px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.highlight__container figure figcaption {
+  color: var(--text-secondary);
+  font-style: italic;
+  text-align: justify;
+}
+
+.main__container {
+  margin: 64px 0 40px;
+}
+
+.main__description h2 {
+  color: var(--text-primary);
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.main__description p {
+  color: var(--text-secondary);
+}
+
+.tourist__attractions {
+  list-style: none;
+  margin-top: 64px;
+
+}
+
+.tourist__attractions li img {
+  width: 100%;
+  border-radius: 28px;
+  margin-bottom: 20px;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.tourist__attractions li:nth-child(3) img {
+  object-position: bottom;
+}
+
+.tourist__attractions li h3 {
+  color: var(--text-primary);
+  font-size: 1.75rem;
+  margin-bottom: 12px;
+}
+
+.tourist__attractions li p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.tourist__attractions article span {
+  font-weight: bold;
+}
+
+.blog__categories {
+  list-style: disc;
+  margin-left: 24px;
+  margin-bottom: 48px;
+}
+
+.blog__categories li::marker {
+  color: var(--text-secondary);
+}
+
+.blog__categories a {
+  font-weight: bold;
+}
+
+.blog__category--history a {
+  color: var(--accent-blue);
+}
+
+.blog__category--couples a {
+  color: var(--accent-purple);
+}
+
+.blog__category--families a {
+  color: var(--accent-pink);
+}
+
+.blog__category--budget a {
+  color: var(--accent-orange);
+}
+
+.text__seo {
+  color: var(--text-secondary);
+  text-align: justify;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer span {
+  font-size: small;
+}
+
+footer a {
+  color: var(--accent-pink);
+  font-weight: bold;
+}
+
+@media (min-width: 640px) {
+  body {
+    padding: 88px 80px 40px;
+  }
+
+  .highlight__container figure figcaption {
+    text-align: center;
+  }
+
+  .text__seo {
+    color: var(--text-secondary);
+    text-align: center;
+  }
 }
