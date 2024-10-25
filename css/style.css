@@ -24,8 +24,14 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 body {
   padding: 40px 20px;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
 .highlight__container span,
@@ -79,6 +85,12 @@ body {
   width: 100%;
   border-radius: 28px;
   margin-bottom: 20px;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.tourist__attractions li:nth-child(3) img {
+  object-position: bottom;
 }
 
 .tourist__attractions li h3 {
@@ -127,12 +139,37 @@ body {
   color: var(--accent-orange);
 }
 
+.text__seo {
+  color: var(--text-secondary);
+  text-align: justify;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer span {
+  font-size: small;
+}
+
+footer a {
+  color: var(--accent-pink);
+  font-weight: bold;
+}
+
 @media (min-width: 640px) {
   body {
-    padding: 88px 80px;
+    padding: 88px 80px 40px;
   }
 
   .highlight__container figure figcaption {
+    text-align: center;
+  }
+
+  .text__seo {
+    color: var(--text-secondary);
     text-align: center;
   }
 }
